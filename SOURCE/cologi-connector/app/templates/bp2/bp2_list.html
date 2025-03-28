@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>BP2 list</h2>
+<ul>
+    {% for bp2 in bp2s %}
+        <li>{{bp2.id}} - {{bp2.email}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
